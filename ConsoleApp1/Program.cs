@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 //using System.CodeDom;
@@ -92,20 +93,89 @@ namespace ConsoleApp1
         //}
 
 
-        public class Example3
-        {
-            int num = 1;
-            public void Counting()
-            {
-                if(num == 11)
-                {
-                    return;  // exit from recurion
-                }
-                Console.WriteLine(num);
-                num++;
-                Counting();
-            }
-        }
+        //public class Example3
+        //{
+        //    int num = 1;
+        //    public void Counting()
+        //    {
+        //        if(num == 11)
+        //        {
+        //            return;  // exit from recurion
+        //        }
+        //        Console.WriteLine(num);
+        //        num++;
+        //        Counting();
+        //    }
+        //}
+
+        /*
+            ACCESS Modifiers in C#
+        */
+
+        //public class Car
+        //{
+        //    internal string name;
+        //    public string model;
+        //    public string color;
+        //    public int price;
+
+        //    public void PrintCarInformation()
+        //    {
+        //        Console.WriteLine($"Name is : {name}");
+        //        Console.WriteLine($"Model is : {model}");
+        //        Console.WriteLine($"Color is : {color}");
+        //        Console.WriteLine($"Price is : {price}/-PKR");
+        //    }
+        //}
+
+        //public class Ferrari: Car
+        //{
+        //    public int speed;
+        //    public void PrintSpeed()
+        //    {
+        //        Console.WriteLine($"speed of Ferrari is {speed} km/h");
+        //    }
+        //}
+
+        //public class Maruti: Ferrari
+        //{
+        //    public float mileage;
+
+        //    public void printMileage()
+        //    {
+        //        Console.WriteLine($"Name is {name}");
+        //        Console.WriteLine($"Model is {model}");
+        //        Console.WriteLine($"Color is {color}");
+        //        Console.WriteLine($"Price is {price}");
+        //        Console.WriteLine($"Mileage is {mileage}");
+        //    }
+        //}
+
+
+        /* ========================================
+               Method Overloading in C# 
+           ======================================== */
+
+        //public class OverLoading
+        //{
+        //    internal void sum(int a, int b)
+        //    {
+        //        Console.WriteLine($"same method with two parameters: {a + b}");
+        //    }
+
+        //    internal void sum(int a, int b, int c)
+        //    {
+        //        Console.WriteLine($"same method with three parameters: {a + b + c}");
+        //    }
+
+
+        //    internal void sum(float a, float b)
+        //    {
+        //        Console.WriteLine($"same method with different parameters type: {a + b}");
+        //    }
+        //}
+
+
 
         static void Main(string[] args)
         {
@@ -350,8 +420,40 @@ namespace ConsoleApp1
 
 
 
-            Example3 obj3 = new Example3();
-            obj3.Counting();
+            //Example3 obj3 = new Example3();
+            //obj3.Counting();
+
+            //Car obj4 = new Car();
+
+            //obj4.model = "2014";
+            //obj4.color = "White";
+            //obj4.price = 475000;
+
+            //obj4.PrintCarInformation();
+
+
+
+            //Maruti obj5 = new Maruti();
+            //obj5.name= "Suzuki Mehran";
+            //obj5.color = "Blue";
+            //obj5.price = 720000;
+            //obj5.model= "2016";
+            //obj5.mileage = Convert.ToInt32(20.55);
+            //obj5.speed = 327;
+            //obj5.PrintSpeed();
+            //obj5.printMileage();
+
+
+            /* ========================================
+                           Method Overloading in C# 
+            //   ======================================== */
+            
+            //OverLoading obj6 = new OverLoading();
+            //obj6.sum(10, 12);
+            //obj6.sum(10, 12, 18);
+            //obj6.sum(10.5f, 12.9f);
+
+
             Console.ReadLine();
         }
     }
